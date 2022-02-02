@@ -1,0 +1,148 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    color:#444444;
+    font-size:13px;
+
+    font-family:"Century Gothic", Helvetica, sans-serif;
+}
+#content{
+    margin:15px auto;
+    text-align:center;
+    position:relative;
+    height:100%;
+}
+#wrapper{
+    overflow:hidden;
+}
+#steps{
+    overflow:hidden;
+}
+.step{
+    float:left;
+    width:100vw;
+
+}
+#navigation{
+
+    background-color:transparent;
+    text-align: center;
+}
+#navigation ul{
+    list-style:none;
+	display: inline-block;
+	margin:0 22px;
+    padding: 20px;
+    background: #2b3444;
+    border-radius: 42px;
+}
+#navigation ul li{
+	float:left;
+    position:relative;
+    height: 28px;
+    width: 88px;
+
+}
+#navigation ul li a{
+    display:block;
+    height:30px;
+    color:#777;
+    outline:none;
+    font-weight:bold;
+    text-decoration:none;
+    line-height:30px;
+    padding:0px 20px;
+    background:transparent url(../img/step-line.png) no-repeat left;;
+    background-size: 100% auto;
+}
+#navigation ul li a:hover,
+#navigation ul li.selected a{
+    color:#666;
+    text-shadow:1px 1px 1px #fff;
+}
+#navigation ul li a.checked{
+    background:transparent url(../img/step-line-checked.png) no-repeat left ;
+    background-size: 100% auto;
+}
+span.checked{
+    background:transparent url(../img/step-line-checked.png) no-repeat left ;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+#navigation ul li span{
+    background:transparent;
+    position:absolute;
+    top:0px;
+    left:1px;
+    width:20px;
+    height:20px;
+}
+#steps form fieldset{
+    border:none;
+}
+.input-field-row input:focus~.a-input__unit{opacity:1}
+.input-field-row input:focus::placeholder{opacity:0}
+.a-input__unit {
+    position: absolute;
+    bottom: 9px;
+    right: 29px;
+    font-size: 16px;
+    color: hsla(0,0%,100%,.5);
+    opacity: 0;
+    font-weight: 300;
+    -webkit-transition: .35s ease;
+    transition: .35s ease;
+}
+.input-field-row:focus .a-input__unit{
+    opacity: 1;
+}
+
+.input-field-row{
+    position: relative;
+    display: inline-block;
+    margin: 5px 0;
+}
+
+
+.a-input__input--error {
+    position: absolute;
+    color: #fff !important;
+    background: #ee2020 !important;
+    padding: 10px;
+    bottom: -1px;
+    max-width: 300px;
+    text-align: center;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    right: 0;
+    z-index: 10;
+    border-radius: 10px;
+    font-size: 12px;
+    display: none;
+}
+
+.input--error .a-input__input--error{
+    display: block;
+}
+
+.input--error input[type="text"],
+.input--error input[type="email"],
+.input--error input[type="number"],
+.input--error textarea.form-control {
+    border-bottom: 1px solid #ee2020;
+}
+
+@media screen and (max-width: 768px) {
+
+    #navigation{
+        text-align: left;
+    }
+    #navigation a{
+        text-align: center;
+    }
+}

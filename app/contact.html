@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en-Us">
+<head>
+    <script type="84fdbbc65278fc391f357bb8-text/javascript">
+        dataLayer = [];
+    </script>
+
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-param" content="_csrf">
+<meta name="csrf-token" content="hYt21otVK2ygUXMamqUjPUDuvTGdrwGwccPT35sflmnVzjSu0T8YIZY0Jm6u6WUIKYbRHNr2aIEX-4KO0FvxMA==">
+    <title>Contact Us</title>
+    <link href="assets/ce2030c1/css/bootstrap.css" rel="stylesheet">
+<link href="css/site_v1.css" rel="stylesheet">
+<link href="css/all.min.css" rel="stylesheet">
+<script type="84fdbbc65278fc391f357bb8-text/javascript">var createDietUserUrl = "\/profiles\/create";</script>
+    </head>
+
+<body>
+
+
+<div class="cover-get-diet  container-fluid">
+    <div class="keto-logo-row">
+        <span class="keto-logo"></span>
+    </div>
+    <div class="clearfix"></div>
+
+    <div class="keto-form-wrap" id="wrapper">
+        <div class="keto-step-form-wrap">
+            <h1>Contact Us</h1>
+        </div>
+
+
+        
+            <div id="steps">
+                <form id="contact-form" name="formElem" action="/contact" method="post">
+<input type="hidden" name="_csrf" value="hYt21otVK2ygUXMamqUjPUDuvTGdrwGwccPT35sflmnVzjSu0T8YIZY0Jm6u6WUIKYbRHNr2aIEX-4KO0FvxMA==">                <fieldset class="contact-form-form">
+                    <div id="subject-select">
+                        <input type="hidden" name="ContactForm[subject]" value="Message from Customketodiet site">
+
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-lg-6">   <div class="form-group field-contactform-name required">
+
+<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" autofocus="" placeholder="Your Name" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>                        </div>
+                        <div class="col-lg-6"> <div class="form-group field-contactform-email required">
+
+<input type="email" id="contactform-email" class="form-control" name="ContactForm[email]" placeholder="Email" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="form-group field-contactform-body required">
+
+<textarea id="contactform-body" class="form-control" name="ContactForm[body]" rows="2" placeholder="Message" aria-required="true"></textarea>
+
+<p class="help-block help-block-error"></p>
+</div>                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-2"></div>
+                        <div class="col-md-8"><div class="form-group field-contactform-verifycode">
+<label class="control-label" for="contactform-verifycode">Verification Code</label>
+<div class="row"><div class="col-lg-3"><img id="contactform-verifycode-image" src="site/captcha?v=61ec9cbf258d28.42193831" alt=""></div><div class="col-lg-6"><input type="text" id="contactform-verifycode" class="form-control" name="ContactForm[verifyCode]"></div></div>
+
+<p class="help-block help-block-error"></p>
+</div></div>
+                        <div class="col-md-2"></div>
+                    </div>
+                    <div class="form-group">
+
+                        <a class="download-ebook-button" name="contact-button" href="javascript:void(0);" onclick="if (!window.__cfRLUnblockHandlers) return false; $(&#039;#contact-form&#039;).submit();" data-cf-modified-84fdbbc65278fc391f357bb8-="">Send</a>                        <a class="download-ebook-button  click-to-next" id="continue" href="index.htm">&larr;&nbsp;Back</a>
+                    </div>
+                </fieldset>
+                </form>
+            </div>
+
+            </div>
+
+<script type="84fdbbc65278fc391f357bb8-text/javascript">
+    (function ($) {
+
+    $( "#contact-form" ).submit(function( event ) {
+
+        $.ajax({
+            url: '/send-form',
+            data: $(this).serialize(),
+            dataType:'json',
+            type: 'post',
+            success: function (data) {
+                var msg;
+                if(data.success){
+                     msg = 'Message was sent. We will contact you!';
+                }else{
+                     msg = 'Message was not send. Please check next:';
+                    for (key in data.errors){
+                        msg += '<br> '+ data.errors[key];
+                    }
+                }
+                $('.status-msg').html(msg);
+            }
+        });
+        event.preventDefault();
+    });
+    } )(jQuery)
+</script> 
+<div class="footer text-center">
+    <ul class="footer-links">
+        <li><a href="/blog" target="_blank">Blog</a></li>
+        <li><a href="privacy.html" target="_blank">Privacy</a></li>
+        <li><a href="site/terms.html" target="_blank">Terms & Conditions</a></li>
+        <!--  <li></li>-->
+        <li><a href="https://affiliates.customketodiet.com/" target="_blank">Affiliates</a></li>
+    </ul>
+    <div class="container">
+        <hr>
+
+        <ul class="contact-links">
+            <li><span>© CKD Media Limited - 2021</span></li>
+        </ul>
+        <hr>
+    </div>
+
+</div>
+</div>
+
+<script src="assets/e43e503c/javascripts/md5.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/e43e503c/javascripts/lajax.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/e1b1c3bd/jquery.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/87bdf8c4/yii.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/87bdf8c4/yii.validation.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/87bdf8c4/yii.captcha.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/87bdf8c4/yii.activeForm.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script src="assets/ce2030c1/js/bootstrap.js" type="84fdbbc65278fc391f357bb8-text/javascript"></script>
+<script type="84fdbbc65278fc391f357bb8-text/javascript">jQuery(function ($) {
+jQuery('#contactform-verifycode-image').yiiCaptcha({"refreshUrl":"\/site\/captcha?refresh=1","hashKey":"yiiCaptcha\/site\/captcha"});
+jQuery('#contact-form').yiiActiveForm([{"id":"contactform-name","name":"name","container":".field-contactform-name","input":"#contactform-name","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Name cannot be blank."});}},{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"contactform-body","name":"body","container":".field-contactform-body","input":"#contactform-body","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Body cannot be blank."});}}], []);
+
+/*
+| ==========================================================
+| Preloader
+| ========================================================== */
+jQuery(window).on("load",function() {
+ //   $('#preloader').fadeOut('100');
+});
+
+
+
+
+});</script><script src="cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="84fdbbc65278fc391f357bb8-|49" defer=""></script></body>
+
+</html>

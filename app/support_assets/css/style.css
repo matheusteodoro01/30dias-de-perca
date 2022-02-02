@@ -1,0 +1,808 @@
+ /*===========================================================
+ Common CSS
+============================================================*/
+
+ body {
+     font-size: 13px;
+
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     color: #000;
+     background: #fff;
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -moz-font-smoothing: antialiased;
+ }
+
+ ul {
+     padding: 0;
+     margin: 0;
+ }
+
+
+ li,
+ li:hover,
+ a:hover,
+ .btn,
+ .btn:hover {
+     -webkit-transition: all .3s ease;
+     transition: all .3s ease;
+ }
+
+ a:hover {
+     text-decoration: none !important;
+ }
+
+ *:focus {
+     outline: none;
+ }
+
+ img {
+     max-width: 100%;
+ }
+
+ strong {
+     font-weight: 700;
+ }
+
+ u {
+     border-bottom: 1px solid #fff;
+     line-height: 1;
+     text-decoration: unset;
+ }
+
+ .cboth {
+     overflow: hidden;
+     clear: both;
+ }
+
+ .left {
+     float: left;
+ }
+
+ .right {
+     float: right;
+ }
+
+
+
+ /*===========================================================
+ Placeholder Style
+============================================================*/
+
+ ::-webkit-input-placeholder {
+     color: #6c6c6c;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 30px;
+     letter-spacing: 0.39px;
+ }
+
+ :-moz-placeholder {
+     color: #6c6c6c;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 30px;
+     letter-spacing: 0.39px;
+ }
+
+ ::-moz-placeholder {
+     color: #6c6c6c;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 30px;
+     letter-spacing: 0.39px;
+ }
+
+ :-ms-input-placeholder {
+     color: #6c6c6c;
+     font-size: 14px;
+     font-weight: 300;
+     line-height: 30px;
+     letter-spacing: 0.39px;
+ }
+
+
+
+ /*===========================================================
+Preloader CSS
+============================================================*/
+ .spinner-area {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     z-index: 9999999999;
+     background: #fff;
+ }
+
+ .spinner {
+     background-color: #065e52;
+     width: 40px;
+     height: 40px;
+     margin: 0 auto;
+     border-radius: 100%;
+     -webkit-animation: scaleout 1.0s infinite ease-in-out;
+     animation: scaleout 1.0s infinite ease-in-out;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     margin-top: -20px;
+     margin-left: -20px;
+     z-index: 9999999;
+ }
+
+ @-webkit-keyframes scaleout {
+     0% {
+         -webkit-transform: scale(0.0)
+     }
+
+     100% {
+         -webkit-transform: scale(1.0);
+         opacity: 0;
+     }
+ }
+
+ @keyframes scaleout {
+     0% {
+         transform: scale(0.0);
+         -webkit-transform: scale(0.0);
+     }
+
+     100% {
+         transform: scale(1.0);
+         -webkit-transform: scale(1.0);
+         opacity: 0;
+     }
+ }
+
+ /*===========================================================
+ Scroll Animate
+============================================================*/
+
+ .js .animate-box {
+     opacity: 0;
+ }
+
+ /*===========================================================
+ Scroll To Top
+============================================================*/
+
+ .go-top {
+     bottom: 15px;
+     display: none;
+     position: fixed;
+     right: 30px;
+     z-index: 999;
+ }
+
+ .go-top img {
+     width: 35px;
+ }
+
+ .go-top span {
+     /*background-color: #4285F4;*/
+     color: rgba(255, 255, 255, .6);
+     cursor: pointer;
+     float: right;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 22px;
+     padding: 5px 10px;
+ }
+
+ .go-top span:hover {
+     color: #fff;
+ }
+
+ /*=============================Common CSS================*/
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     margin: 0;
+ }
+
+
+ .title {
+     text-align: center;
+     padding-top: 70px;
+     padding-bottom: 45px;
+ }
+
+ .title h2 {
+     color: #313131;
+     color: #ffffff;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 50px;
+     color: #313131;
+ }
+
+ .title p {
+     color: #000000;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 35px;
+ }
+
+ /*=============================Header Area===============*/
+ .header-area {
+     background-color: #121929;
+     padding: 25px 0;
+ }
+
+
+ /*==========================Footer Area===============*/
+ .footer-area {
+     background-color: #363b48;
+     padding: 70px 0;
+ }
+
+ .footer-text {
+     text-align: center;
+ }
+
+ .footer-text h3 {
+     color: #ffffff;
+     color: #ffffff;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 50px;
+     color: #ffffff;
+     margin-bottom: 30px;
+ }
+
+
+
+ /*===========================================================
+Navigation CSS
+============================================================*/
+ .desk-nav {
+     background-color: #121929;
+     height: 80px;
+     line-height: 80px;
+     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+     width: 100%;
+     z-index: 9998;
+     transition: all 0.5s;
+ }
+
+ .desk-nav.scrollUp {
+     transform: translateY(-80px);
+ }
+
+ .nex-menu,
+ .desk-nav ul {
+     margin: 0;
+     padding: 0;
+     display: inline-block;
+     float: right;
+ }
+
+ .nex-menu {
+     display: inline-block;
+ }
+
+ .desk-nav ul.navbar-menu li {
+     display: inline-block;
+     margin: 0 10px;
+ }
+
+ .desk-nav ul.navbar-menu li a {
+     color: #f0f0f0;
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 40px;
+     text-transform: uppercase;
+     display: inline-block;
+     text-decoration: none;
+ }
+
+ .desk-nav a#brand {
+     text-transform: uppercase;
+     float: left;
+     font-weight: 800;
+     font-size: 20px;
+ }
+
+ .desk-nav button {
+     background: none;
+     width: 30px;
+     height: 40px;
+     margin-top: 20px;
+     border: none;
+     float: right;
+     display: inline-block;
+     cursor: pointer;
+     display: none;
+ }
+
+ .desk-nav button span {
+     width: 30px;
+     height: 40px;
+     height: 2px;
+     background: #333;
+     display: block;
+     margin: 5px 0;
+ }
+
+ #brand {
+     display: inline-block;
+ }
+
+ .nexmenu-reveal {
+     height: 27px;
+     width: 23px;
+     cursor: pointer;
+     z-index: 99999;
+     transition: opacity .25s ease;
+ }
+
+ .nexmenu-reveal.nexclose {
+     position: fixed;
+     height: 27px;
+     width: 25px;
+     cursor: pointer;
+     z-index: 110;
+     transition: opacity .25s ease;
+ }
+
+ .nexmenu-reveal:hover {
+     opacity: .7;
+ }
+
+ .nexmenu-reveal.nexclose span:nth-of-type(1) {
+     -webkit-transform: translateY(11px) translateX(0) rotate(45deg);
+     transform: translateY(11px) translateX(0) rotate(45deg);
+     background: #FFF;
+ }
+
+ .nexmenu-reveal.nexclose span:nth-of-type(2) {
+     background: #FFF;
+     opacity: 0;
+ }
+
+ .nexmenu-reveal.nexclose span:nth-of-type(3) {
+     -webkit-transform: translateY(-11px) translateX(0) rotate(-45deg);
+     transform: translateY(-11px) translateX(0) rotate(-45deg);
+     background: #FFF;
+ }
+
+ .nexmenu-reveal span {
+     background: #fff;
+     border: none;
+     height: 3px;
+     width: 100%;
+     position: absolute;
+     top: 0;
+     left: 12px;
+     transition: all .35s ease;
+     cursor: pointer;
+     border-radius: 2px;
+ }
+
+ .nexmenu-reveal span {
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+     width: 25px;
+ }
+
+ .nexmenu-reveal span:nth-of-type(2) {
+     top: 8px;
+     opacity: 1;
+ }
+
+ .nexmenu-reveal span:nth-of-type(3) {
+     top: 16px;
+ }
+
+ .nexmenu-reveal.nexclose span:nth-of-type(3) {
+     top: 22px;
+ }
+
+ .nexmenu-reveal {
+     z-index: 110;
+ }
+
+ .nexmenu-reveal {
+     width: 25px;
+ }
+
+ .nex-bar {
+     overflow: hidden;
+ }
+
+ .nex-container #brand a {
+     color: #fff;
+     padding: 15px;
+     font-size: 20px;
+ }
+
+
+ .faq-header {
+     background-color: #121929;
+ }
+
+ .faq-menu .accordion-container {
+     position: relative;
+     width: 100%;
+     border: 1px solid #0079c1;
+     border-top: none;
+     outline: 0;
+     cursor: pointer
+ }
+
+ .accordion-container .article-title {
+
+     color: #000000;
+     font-size: 23px;
+     font-weight: 500;
+     display: block;
+     position: relative;
+     padding: 25px 35px 25px 60px;
+     cursor: pointer;
+ }
+
+ .accordion-container .article-title:hover i:before,
+ .accordion-container .article-title:hover i:active,
+ .accordion-container .content-entry.open i {
+     color: #000;
+ }
+
+ .accordion-container .content-entry i {
+
+     position: absolute;
+     top: 25px;
+     left: 25px;
+     font-style: normal;
+     font-size: 23px;
+     color: #000;
+     width: 21px;
+     height: 21px;
+     border: 2px solid #000000;
+     line-height: 16px;
+     border-radius: 100%;
+
+ }
+
+ .accordion-container .content-entry i:before {
+     content: "+ ";
+     position: absolute;
+     left: 2px;
+
+ }
+
+ .accordion-container .content-entry.open i:before {
+     content: "- ";
+     left: 5px;
+     position: absolute;
+     top: -2px;
+ }
+
+/* .accordion-content {
+     display: none;
+     padding-left: 54px;
+ }*/
+
+.accordion-content {
+    display: none;
+    padding-left: 35px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+ .accordion-content p {
+     color: #000000;
+     font-size: 16px;
+     font-weight: 500;
+     margin-bottom: 20px;
+     margin-top: 15px;
+ }
+
+ .accordion-content p a {
+     text-decoration: underline;
+     color: #2256ff;
+ }
+
+ .accordion-content p span {
+     font-weight: 500;
+ }
+
+ /*===========================faq-area=================*/
+ .faq-area {
+     padding: 90px 0;
+     overflow: hidden;
+ }
+
+ .faq-title h2 {
+     color: #873b22;
+     font-size: 33px;
+     font-weight: 400;
+     line-height: 50px;
+     margin-bottom: 20px;
+ }
+
+ .faq-title p {
+     color: #000000;
+     font-size: 20px;
+     font-weight: 400;
+     line-height: 30px;
+     margin-bottom: 15px;
+ }
+
+ .faq-title {
+     margin-bottom: 45px;
+ }
+
+ .faq-footer-area {
+     background-color: #121929;
+     padding: 35px 0;
+ }
+
+ .faq-footer-area h6 {
+     font-size: 16px;
+     font-weight: 400;
+     font-family: 'Nunito Sans', sans-serif;
+     color: #848999;
+     line-height: 35px;
+ }
+
+ .faq-titles {}
+
+ .faq-titles h2 {
+     font-family: 'Open Sans', sans-serif;
+     text-align: center;
+     padding: 15px 0;
+     background-color: #0c446f;
+     color: #fff;
+     font-weight: 700;
+ }
+
+ .faqs-area .faq-title p {
+     color: #000000;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 40px;
+
+ }
+
+ .faqs-area .faq-title h3 {
+     width: 601px;
+     height: 18px;
+     background-clip: text;
+     color: #000000;
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 45px;
+     margin-bottom: 30px;
+ }
+
+ .faqs-area .faq-title u {
+    display: block;
+     display: block;
+     line-height: 25px;
+     text-decoration: underline;
+     
+ }
+ .faqs-area .faq-title a {
+     display: block;
+     line-height: 25px;
+     text-decoration: underline;
+     color: #000;
+ }
+
+/* .content-entry:first-child {
+     padding-top: 45px;
+ }
+
+ .content-entry:last-child {
+     padding-bottom: 45px;
+ }
+*/
+ .content-entry {
+     padding-left: 25px;
+     padding-right: 25px;
+     /* padding-top: 10px;
+     padding-bottom: 10px;*/
+ }
+
+ .content-entries {
+     /*background: rgb(255, 195, 0);*/
+     /*background: #f0f0f0;*/
+ }
+
+ .article-title {
+ background: #f0f0f0;
+     margin-left: -25px;
+     margin-right: -25px;
+     position: relative;
+     -webkit-transition: .3s;
+     -o-transition: .3s;
+     transition: .3s;
+ }
+
+ .accordion-container .article-title:hover i:before,
+ .accordion-container .article-title:hover i:active,
+ .accordion-container .content-entry:hover i {
+     color: #fff;
+     border-color: #fff;
+ }
+
+ .article-title:hover {
+     background: rgb(255, 195, 0);
+     color: #fff;
+ }
+
+ .content-entry {
+     /*height: 100%;*/
+     /*background-color: #f0f0f0;*/
+ }
+
+ .accordion-content p:last-child {
+     margin-bottom: 0;
+ }
+
+ .faq-area .container,
+ .clients-area .container {
+     max-width: 1050px;
+ }
+
+ .accordion-container .article-title {
+     font-size: 18px;
+ }
+
+ .faq-btns p {
+     color: #000000;
+     font-size: 18px;
+     font-weight: 400;
+     line-height: 40px;
+     margin-bottom: 10px;
+ }
+
+ .faq-btns {
+     text-align: center;
+     margin-top: 75px;
+     margin-bottom: 100px;
+ }
+
+ .faq-footer a {
+     color: #7a7a7a;
+     font-size: 16px;
+     line-height: 28px;
+ }
+
+ .faq-inners h4 {
+     /*display: none;*/
+     font-weight: 600;
+     margin-bottom: 20px;
+     margin-top: 30px;
+ }
+
+ @media all and (max-width: 991px) {
+     .custom-header-area {
+         padding: 40px 0;
+     }
+
+     .faq-area {
+         padding: 50px 0;
+     }
+
+     .content-entries {
+         margin-bottom: 30px;
+         height: auto;
+     }
+
+ }
+
+ @media all and (max-width: 767px) {
+     .faq-titles {
+         margin-top: 72px;
+     }
+
+     .faqs-area .faq-title h3 img {
+         max-width: 100%;
+     }
+
+     .brand-bar {
+         padding: 8px 10px;
+     }
+
+     .faq-title {
+         margin-bottom: 20px;
+     }
+
+     .nex-bar {
+         background: #121929 !important;
+     }
+
+     .nex-remove {
+         display: none !important;
+     }
+
+     .faq-area {
+         /*margin-top: 60px;*/
+     }
+
+     .nex-bar {
+         position: absolute !important;
+     }
+
+     .faq-inners h3 {
+         display: none;
+     }
+
+     .faq-inners h4 {
+         font-size: 19px;
+         display: block;
+         margin-bottom: 15px;
+         margin-top: 15px;
+     }
+
+ }
+
+ @media all and (max-width: 550px) {
+
+     .faq-title h2 {
+         line-height: 40px;
+     }
+
+     .accordion-container .article-title {
+         padding-left: 42px;
+     }
+
+     .accordion-content {
+         padding-left: 42px;
+     }
+
+     .accordion-container .article-title {
+         font-size: 20px;
+     }
+
+     .title {
+         padding-top: 50px;
+     }
+
+     .title h2 {
+         margin-bottom: 0;
+         line-height: 40px;
+     }
+
+     .title p {
+         font-size: 21px;
+     }
+
+     .accordion-container .content-entry i {
+         left: 15px;
+     }
+
+     .accordion-content {
+         padding-left: 20px;
+     }
+
+     .accordion-content p a {
+         word-break: break-all;
+         display: block;
+         padding-right: 10px;
+         text-decoration: underline;
+         color: #2256ff;
+     }
+
+ }
+
+ @media all and (max-width: 500px) {
+
+     .brand-bar {
+         padding: 12px 8px !important;
+     }
+
+     .nex-bar img {
+         width: 230px;
+     }
+
+ }
